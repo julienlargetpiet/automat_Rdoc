@@ -44,7 +44,7 @@ do
 
                 :)
 
-                        echo "options is '-p', package name"
+                        echo "options is '-i' for path"
                         
                         exit 1
 
@@ -52,7 +52,7 @@ do
 
                 *)
 
-                        echo "options is '-p', package name"
+                        echo "options is '-i', for path"
 
                         exit 1
 

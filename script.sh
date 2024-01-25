@@ -12,10 +12,18 @@ html_out="yes"
 
 md_out="yes"
 
-while getopts ":i:p:h:m:" options
+add_="no"
+
+while getopts ":i:p:h:m:a:" options
 do
 
         case "${options}" in
+
+                a)
+
+                        add_=${OPTARG}
+
+                        ;;
 
                 m)
 
@@ -118,7 +126,11 @@ if [ $md_out = "yes" ]; then
 
         else
 
-                echo "" > $path_2/README.md
+                if [ $add_ = "no" ]; then
+
+                        echo "" > $path_2/README.md
+
+                fi
 
         fi
 

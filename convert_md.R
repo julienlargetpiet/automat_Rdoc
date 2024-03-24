@@ -2,7 +2,7 @@ library("Rd2md")
 
 loc <- data.frame(read.table("loc.txt"))[1, 1]
 
-alf <- list.files(loc, pattern="")
+alf <- list.files(loc, pattern=".Rd")
 
 alf <- paste(loc, alf, sep="")
 

@@ -16,7 +16,7 @@ for (i in 1:length(alf)){
 
         print(paste("generating markdown for", alf[i]))
 
-        as_markdown(alf[i], RD_me, append=T)
+        Rd2markdown(alf[i], RD_me, append=T)
 
 }
 
